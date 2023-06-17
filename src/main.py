@@ -2,7 +2,7 @@ import face_recognition
 import cv2
 import os
 
-video_mode = False
+video_mode = True
 
 if video_mode == False:
     path_image = "image/2_face.jpg"
@@ -30,11 +30,12 @@ if (video_mode == True):
 
     while True:
         unused, frame = video_capture.read()
+
         #improve performance
         small_frame = cv2.resize(frame, (0, 0), fx=0.25, fy=0.25)
 
         # Convert the image from BGR color to RGB color
-        rgb_frame = frame[:, :, ::-1]
+        rgb_frame = small_frame[:, :, ::-1]
 
         face_landmarks_list = face_recognition.face_landmarks(rgb_frame)
 
@@ -50,5 +51,5 @@ if (video_mode == True):
         # 27 is the Escape Key
         if cv2.waitKey(1) == 27 :
             break
-        video_capture.release()
-        cv2.destroyAllWindows()
+    video_capture.release()
+    cv2.destroyAllWindows()

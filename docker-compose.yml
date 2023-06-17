@@ -2,7 +2,7 @@ version: '2.3'
 
 services:
   face_recognition:
-    build: 
+    build:
       context: ./
     image: face_recognition
     container_name: face_recognition
