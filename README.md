@@ -23,7 +23,7 @@ If **video_mode** is set to *False*, the application will process the specified 
 
 Press the **Esc** key to exit the application.
 
-Please note that the first time you run the **docker-compose up** command, it may take some time to build the Docker image. Subsequent runs will be faster.
+Please note that the first time you run the **docker-compose up --build** command, it may take some time to build the Docker image. Subsequent runs will be faster.
 
 **Note**: If you encounter any issues related to display or video access, make sure you have executed the **xhost +** command in your terminal before running the **docker-compose up** command.
 
