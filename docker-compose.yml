@@ -1,0 +1,9 @@
+version: '2.3'
+
+services:
+  face_recognition:
+    build: ./
+    image: face_recognition
+    container_name: face_recognition
+    ports:
+      - "5000:5000"

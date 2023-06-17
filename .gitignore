@@ -43,7 +43,7 @@ htmlcov/
 .coverage
 .coverage.*
 .cache
-nosetests.xml
+nosetests.xml/the/workdir/path
 coverage.xml
 *.cover
 *.py,cover
@@ -124,17 +124,7 @@ celerybeat.pid
 .venv
 env/
 venv/
-ENV/
-env.bak/
-venv.bak/
-
-# Spyder project settings
-.spyderproject
-.spyproject
-
-# Rope project settings
-.ropeproject
-
+ENV//the/workdir/path
 # mkdocs documentation
 /site
 
